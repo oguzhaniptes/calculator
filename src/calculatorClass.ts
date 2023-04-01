@@ -22,7 +22,7 @@ export class Calculator {
   squared(value: number): number {
     return Math.pow(value, 2);
   }
-  times(value1: number, value2: number): number {
+  pow(value1: number, value2: number): number {
     return Math.pow(value1, value2);
   }
 }
