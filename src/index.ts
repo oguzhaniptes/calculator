@@ -1,4 +1,4 @@
-import { Calculator } from "./calculatorClass";
+import { Calculator } from "./calculator";
 
 const myNewCalculator = new Calculator();
 

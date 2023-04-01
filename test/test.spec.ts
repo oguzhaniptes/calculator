@@ -1,4 +1,4 @@
-import { Calculator } from "../src/calculatorClass";
+import { Calculator } from "../src/calculator";
 
 describe("Calculator real life tests", () => {
   let myNewCalculator = new Calculator();
