@@ -2,8 +2,11 @@ import { Calculator } from "../src/calculator";
 
 describe("Calculator real life tests", () => {
   let myNewCalculator = new Calculator();
-  const value1 = Math.floor(Math.random() * 100);
-  const value2 = Math.floor(Math.random() * 100);
+
+  const min = -20;
+  const max = 20;
+  const value1 = Math.floor(Math.random() * (max - min + 1)) + min;
+  const value2 = Math.floor(Math.random() * (max - min + 1)) + min;
   console.log(value1, value2);
 
   it("calculator addition function test", async () => {
