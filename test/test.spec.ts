@@ -2,8 +2,8 @@ import { Calculator } from "../src/calculator";
 
 describe("Calculator real life tests", () => {
   let myNewCalculator = new Calculator();
-  const value1 = Math.floor(Math.random() * 10);
-  const value2 = Math.floor(Math.random() * 10);
+  const value1 = Math.floor(Math.random() * 100);
+  const value2 = Math.floor(Math.random() * 100);
   console.log(value1, value2);
 
   it("calculator addition function test", async () => {

@@ -15,8 +15,14 @@ export class Calculator {
     return value1 / value2;
   }
 
-  squareRoot(value: number): number {
-    return Math.sqrt(value);
+  squareRoot(value: number): number | string {
+    if (value < 0) {
+      let positive = value * -1;
+      return Math.sqrt(positive) + "i";
+    }
+    {
+      return Math.sqrt(value);
+    }
   }
 
   squared(value: number): number {
@@ -24,5 +30,8 @@ export class Calculator {
   }
   pow(value1: number, value2: number): number {
     return Math.pow(value1, value2);
+  }
+  minus(value: number): number {
+    return -value;
   }
 }
