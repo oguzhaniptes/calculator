@@ -1,12 +1,11 @@
 import { Calculator } from "../src/calculator";
 
 describe("Calculator real life tests", () => {
-  let myNewCalculator = new Calculator();
+  let myNewCalculator = new Calculator(-20, 20);
 
-  const min = -20;
-  const max = 20;
-  const value1 = Math.floor(Math.random() * (max - min + 1)) + min;
-  const value2 = Math.floor(Math.random() * (max - min + 1)) + min;
+  const value1 = myNewCalculator.getRandom();
+  const value2 = myNewCalculator.getRandom();
+
   console.log(value1, value2);
 
   it("calculator addition function test", async () => {

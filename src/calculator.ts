@@ -1,4 +1,19 @@
 export class Calculator {
+
+  minValue: number;
+  maxValue: number;
+
+  constructor(x:number,y:number) {
+    this.minValue = x;
+    this.maxValue = y;
+  }
+
+  getRandom():number{
+    const randomNumber = Math.floor(Math.random() * (this.maxValue - this.minValue + 1)) + this.minValue;
+    return randomNumber;
+  }
+  
+
   public addition(value1: number, value2: number): number {
     return value1 + value2;
   }
